@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import productRoute from "./routes/ProductRoute.js";    
+import e from "express";
 
 dotenv.config();
 
@@ -15,4 +16,4 @@ app.listen(process.env.APP_PORT, () => {
     console.log(`Server is running on port ${process.env.APP_PORT}`);
 });
 
-module.exports = app;
+export default app;
