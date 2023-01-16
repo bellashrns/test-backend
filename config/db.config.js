@@ -14,4 +14,4 @@ const db = new Sequelize(DB_URL, {
     }
 });
 
-module.exports = db;
+export default db;
